@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Juan López</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: url('campusciutadella.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+
+        .curriculum {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        .large-text {
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function changeLanguage(lang) {
+            var elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(function(element) {
+                element.style.display = element.getAttribute('data-lang') === lang ? 'block' : 'none';
+            });
+        }
+
+        window.onload = function() {
+            changeLanguage('es');  // Por defecto, mostrar en castellano
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Daniel Juan López</h1>
+</header>
+
+<nav>
+    <button onclick="changeLanguage('ca')">Català</button>
+    <button onclick="changeLanguage('es')">Castellano</button>
+    <button onclick="changeLanguage('en')">English</button>
+</nav>
+
+<section>
+    <!-- Español -->
+    <div data-lang="es" class="large-text">
+        <h2>Sobre mí</h2>
+        <p>Mi objetivo es aplicar mis conocimientos en tecnología y gestión de datos en un entorno empresarial donde pueda contribuir al crecimiento y la sostenibilidad. Aspiro a trabajar en empresas internacionales y asumir roles de liderazgo en la optimización de procesos operativos y en proyectos con impacto positivo en la sostenibilidad.</p>
+        <p>Soy una persona proactiva, analítica y adaptable. Tengo una gran capacidad para trabajar en equipo y un enfoque crítico para resolver problemas. Me interesan especialmente los proyectos relacionados con la sostenibilidad, la optimización de procesos y la tecnología aplicada a la mejora empresarial.</p>
+        <p>Además, soy aficionado a los deportes, sigo mucho el fútbol, el básquet de la NBA y me gusta salir a correr. Mi objetivo es algún día llegar a hacer una triatlón y un Ironman. También me gusta viajar, descubrir nuevas culturas y el mundo de la psicología. Disfruto asistiendo a conciertos y experimentando la música en directo.</p>
+    </div>
+
+    <!-- Català -->
+    <div data-lang="ca" class="large-text" style="display:none;">
+        <h2>Sobre mi</h2>
+        <p>El meu objectiu és aplicar els meus coneixements en tecnologia i gestió de dades en un entorn empresarial on pugui contribuir al creixement i la sostenibilitat. Aspiro a treballar en empreses internacionals i assumir rols de lideratge en l'optimització de processos operatius i en projectes amb impacte positiu en la sostenibilitat.</p>
+        <p>Sóc una persona proactiva, analítica i adaptable. Tinc una gran capacitat per treballar en equip i un enfocament crític per resolrdre problemes. M'interessen especialment els projectes relacionats amb la sostenibilitat, l'optimització de processos i la tecnologia aplicada a la millora empresarial.</p>
+        <p>A més, sóc aficionat als esports, segueixo molt el futbol, el bàsquet de la NBA i m'agrada sortir a córrer. El meu objectiu és algun dia arribar a fer una triatló i un Ironman. També m'agrada viatjar, descobrir noves cultures i el món de la psicologia. Gaudeixo anant a concerts i experimentant la música en directe.</p>
+    </div>
+
+    <!-- English -->
+    <div data-lang="en" class="large-text" style="display:none;">
+        <h2>About me</h2>
+        <p>My goal is to apply my knowledge in technology and data management in a business environment where I can contribute to growth and sustainability. I aspire to work in international companies and take on leadership roles in optimizing operational processes and projects with a positive impact on sustainability.</p>
+        <p>I am proactive, analytical, and adaptable. I have great teamwork skills and a critical approach to problem-solving. I am particularly interested in projects related to sustainability, process optimization, and technology applied to business improvement.</p>
+        <p>Additionally, I am a sports enthusiast, I follow football and NBA basketball, and I enjoy running. My goal is to one day complete a triathlon and an Ironman. I also enjoy traveling, discovering new cultures, and learning about psychology. I love attending concerts and experiencing live music.</p>
+    </div>
+
+    <div class="curriculum">
+        <h2>Accede a mi Currículum</h2>
+        <iframe src="https://drive.google.com/file/d/1rhUPFci-ok_EWOXzI9p5BLVNqweuLFHO/view?usp=sharing"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>Contacto: <p>Teléfono: 684 12 24 63</p> <p>Email: <a href="mailto:danijuanlopez15@gmail.com">danijuanlopez15@gmail.com</a></p> <p>Dirección: Travesía Carril, 2, 6-3 (Girona)</p>
+</footer>
+
+</body>
+</html>
